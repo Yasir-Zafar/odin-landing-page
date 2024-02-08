@@ -1,10 +1,11 @@
 # odin-recipes
 
-This project will consist of a basic html page containing a list of recipes.
+This project will consist of a basic html-css page containing a list of recipes.
 
 The Languages used are:
 
 - HTML
+- CSS
 
 The techniques used are as follows:
 
@@ -13,3 +14,9 @@ The techniques used are as follows:
 - Links
 - Images
 - Typography
+
+- Flexbox
+- Box layout
+- Fonts
+- Color theory
+- Cuteness
