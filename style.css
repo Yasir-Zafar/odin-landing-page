@@ -1,15 +1,15 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
 
 body {
   display: flex;
   flex-direction: column;
   background: #fff;
-  width: 100%;
-  height: 100%;
   font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
 }
 
 .hero {
@@ -27,17 +27,13 @@ body {
   padding: 16px;
 }
 
-.navbar .right {
-  display: flex;
-  gap: 16px;
-}
 
 .navbar h4 {
   font-weight: 100;
 }
 
 .header {
-  max-width: 70%;
+  max-width: 80%;
   margin: 0 auto;
   padding: 100px;
   display: flex;
@@ -53,22 +49,23 @@ body {
   margin: 0;
 }
 
-.header h4 {
+.header p {
   margin: 16px 0;
   font-size: 18px;
-  font-weight: lighter;
+  font-weight: 100;
   color: #E5E7EB;
 }
 
 .header .image {
   background: #E5E7EB;
   color: #333;
-  width: 850px;
-  height: 280px;
+  width: 550px;
+  height: 333px;
+  object-fit: scale-down; 
 }
 
 .content {
-  height: 450px;
+  height: 400px;
 }
 
 .imp_info {
@@ -96,14 +93,16 @@ body {
 }
 
 .card img {
-  border: medium solid #3882F6;
+  border: 3px solid #3882F6;
   border-radius: 8px;
   width: 150px;
   height: 150px;
+  object-fit: cover;
 }
 
-.card h5 {
+.card h4 {
   font-weight: 100;
+  font-size: 12px;
   color: #1F2937;
 }
 
@@ -121,16 +120,16 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  max-width: 44%;
+  max-width: 55%;
 }
 
-.quote .container .one {
+.quote .container p {
   margin: 10px;
   font-size: 36px;
   font-weight: 100;
 }
 
-.quote .container .cite {
+.quote .container cite {
   font-size: 22px;
   align-self: flex-end;
 }
@@ -172,7 +171,7 @@ body {
 }
 
 .banner .container button {
-  border: medium solid #fff;
+  border: 3px solid #fff;
 }
 
 footer {
@@ -186,13 +185,25 @@ footer {
 }
 
 button {
-  padding: 8px 34px;
+  padding: 6px 34px;
   border-radius: 8px;
-  border: 8px;
-  border-color: #3882F6;
+  border: 3px solid #3882F6;
   font-size: 16px;
-  font-weight: 900;
+  font-weight: bold;
   background: #3882F6;
   color: #fff;
   font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  display: flex;
+  gap: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
 }
